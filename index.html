@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Arya S | Portfolio</title>
+    <!-- Stylish font for brand -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <nav class="navbar">
+      <a href="#hero" class="brand">Arya S</a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="AryaS_Resume_Portfolio.pdf" target="_blank" rel="noopener"
+          >Resume</a
+        >
+        <a href="#contact">Contact Me</a>
+      </div>
+      <button id="toggle-mode" title="Switch Theme">🌙</button>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+    </nav>
+    <canvas id="webbing"></canvas>
+    <div id="cursor-circle"></div>
+    <main>
+      <section class="landing hero-section" id="hero">
+        <div class="intro-card big-intro">
+          <img src="profile.jpeg" alt="Profile" class="profile-img-large" />
+          <h1 class="enlarged-name">Arya S</h1>
+          <div class="social-icons-group">
+            <!-- First row: Mail, LinkedIn, GitHub -->
+            <div class="social-icons-row">
+              <div class="icon-wrapper">
+                <span class="icon-email" tabindex="0">
+                  <img
+                    src="https://img.icons8.com/fluency-systems-filled/32/ffffff/new-post.png"
+                    alt="Gmail"
+                  />
+                  <span class="email-tooltip">zenithria123@gmail.com</span>
+                </span>
+              </div>
+              <div class="icon-wrapper">
+                <a
+                  href="https://www.linkedin.com/in/arya414/"
+                  target="_blank"
+                  rel="noopener"
+                  title="LinkedIn"
+                >
+                  <img
+                    src="https://img.icons8.com/ios-filled/32/ffffff/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a
+                  href="https://github.com/zenithria414"
+                  target="_blank"
+                  rel="noopener"
+                  title="GitHub"
+                >
+                  <img
+                    src="https://img.icons8.com/ios-glyphs/32/ffffff/github.png"
+                    alt="GitHub"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- Second row: LeetCode, GeeksforGeeks, HackerRank -->
+            <div class="social-icons-row">
+              <div class="icon-wrapper">
+                <a
+                  href="https://leetcode.com/u/zenithria_414/"
+                  target="_blank"
+                  rel="noopener"
+                  title="LeetCode"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                    alt="LeetCode"
+                    class="custom-social-icon"
+                  />
+                  <span class="custom-tooltip">LeetCode</span>
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a
+                  href="https://www.geeksforgeeks.org/user/zenithria_414/"
+                  target="_blank"
+                  rel="noopener"
+                  title="GeeksforGeeks"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
+                    alt="GeeksforGeeks"
+                    class="custom-social-icon"
+                  />
+                  <span class="custom-tooltip">GeeksforGeeks</span>
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a
+                  href="https://www.hackerrank.com/profile/zenithria123"
+                  target="_blank"
+                  rel="noopener"
+                  title="HackerRank"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png"
+                    alt="HackerRank"
+                    class="custom-social-icon"
+                  />
+                  <span class="custom-tooltip">HackerRank</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-landing">
+          <div class="greeting">
+            <span class="hi-all">
+              Hi All <span class="wave">👋</span>, I'm Arya.
+            </span>
+          </div>
+          <div class="typewriter-container">
+            <span id="typewriter-text"></span>
+          </div>
+          <div class="intro-buttons">
+            <a
+              href="AryaS_Resume_Portfolio.pdf"
+              class="intro-btn resume-btn"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Resume</span>
+            </a>
+            <a href="#contact" class="intro-btn contact-btn">
+              <span>Contact Me</span>
+            </a>
+          </div>
+          <div class="small-coding-gif">
+            <!-- Replace with your coding GIF -->
+            <!-- <img src="YOUR_CODING_GIF_LINK_HERE" alt="Coding GIF" /> -->
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section in a new frame with heading -->
+      <section class="skills-section" id="skills">
+        <h1 class="skills-heading">Skills:</h1>
+        <div class="skills-content">
+          <div class="skills-gif-container">
+            <!-- Replace with a skills-related GIF -->
+            <img
+              src="https://camo.githubusercontent.com/ce6123190dda86ac492acf158447b90d6d1264b57fde1497ef10436a7e57e834/68747470733a2f2f6669766572722d7265732e636c6f7564696e6172792e636f6d2f696d616765732f745f6d61696e312c715f6175746f2c665f6175746f2c715f6175746f2c665f6175746f2f6174746163686d656e74732f64656c69766572792f61737365742f32386634343133623237653264353134326362326366343132353736623562652d313636373030323839362f7375706572706978656c657273616e696d6174696f6e2f6372656174652d612d637573746f6d2d706978656c2d6172742d77616c6c70617065722d6261636b67726f756e642e676966"
+              alt="Skills GIF"
+              class="skills-gif"
+            />
+            <div class="fun-fact-box" id="funFactBox">
+              <!-- Fun fact will be inserted here by JS -->
+            </div>
+          </div>
+          <div class="skills-list-container">
+            <!-- Programming Languages -->
+            <div class="skills-subsection">
+              <h2>Programming Languages</h2>
+              <div class="skills-row">
+                <div class="skill-icon" title="C">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                    alt="C"
+                  />
+                  <div class="stars">⭐⭐⭐⭐☆</div>
+                </div>
+                <div class="skill-icon" title="C++">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                    alt="C++"
+                  />
+                  <div class="stars">⭐⭐⭐⭐☆</div>
+                </div>
+                <div class="skill-icon" title="Java">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                    alt="Java"
+                  />
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="skill-icon" title="Python">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                    alt="Python"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+              </div>
+            </div>
+            <!-- Web Technologies -->
+            <div class="skills-subsection">
+              <h2>Web Technologies</h2>
+              <div class="skills-row">
+                <div class="skill-icon" title="HTML5">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                  />
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="skill-icon" title="CSS3">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                  />
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="skill-icon" title="JavaScript">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                  />
+                  <div class="stars">⭐⭐⭐⭐☆</div>
+                </div>
+                <div class="skill-icon" title="React">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="Node.js">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt="Node.js"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="Express">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt="Express"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+              </div>
+            </div>
+            <!-- Databases -->
+            <div class="skills-subsection">
+              <h2>Databases</h2>
+              <div class="skills-row">
+                <div class="skill-icon" title="MySQL">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                    alt="MySQL"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="MongoDB">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                    alt="MongoDB"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+              </div>
+            </div>
+            <!-- Core Technologies -->
+            <div class="skills-subsection">
+              <h2>Core Technologies</h2>
+              <div class="skills-row">
+                <div class="skill-icon" title="Verilog">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/38bdf8/v.png"
+                    alt="Verilog"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="MATLAB">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg"
+                    alt="MATLAB"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="Arduino">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+                    alt="Arduino"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <!-- <div class="skill-icon" title="PCB">
+              <img src="https://img.icons8.com/ios-filled/50/38bdf8/pcb.png" alt="PCB Design" />
+              <div class="stars">⭐⭐⭐☆☆</div>
+            </div> -->
+              </div>
+            </div>
+            <!-- Software -->
+            <div class="skills-subsection">
+              <h2>Softwares</h2>
+              <div class="skills-row">
+                <div class="skill-icon" title="VS Code">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                    alt="VS Code"
+                  />
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="skill-icon" title="Git">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                    alt="Git"
+                  />
+                  <div class="stars">⭐⭐⭐⭐☆</div>
+                </div>
+                <div class="skill-icon" title="GitHub">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="Github"
+                    style="background: #fff; border-radius: 50%"
+                  />
+                  <div class="stars">⭐⭐⭐⭐☆</div>
+                </div>
+                <div class="skill-icon" title="Jupyter Notebook">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"
+                    alt="Jupyter Notebook"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="Quartus">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/38bdf8/q.png"
+                    alt="Quartus"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="KiCad">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/38bdf8/k.png"
+                    alt="KiCad"
+                  />
+                  <div class="stars">⭐⭐⭐☆☆</div>
+                </div>
+                <div class="skill-icon" title="Postman">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                    alt="Postman"
+                  />
+                  <div class="stars">⭐⭐☆☆☆</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education-section" id="education">
+        <h1 class="edu-heading">Education</h1>
+        <div class="edu-timeline-container">
+          <div class="edu-timeline">
+            <!-- College -->
+            <div class="edu-step">
+              <div class="edu-icon college"><span>🎓</span></div>
+              <div class="edu-content">
+                <div class="edu-title">
+                  BE Electronics and Communication Engineering
+                </div>
+                <div class="edu-sub">MIT Campus, Anna University</div>
+                <div class="edu-date">Aug 2023 - Present</div>
+                <div class="edu-detail">CGPA: 8.56 (till sem 3)</div>
+              </div>
+            </div>
+            <!-- 12th -->
+            <div class="edu-step">
+              <div class="edu-icon school"><span>🏫</span></div>
+              <div class="edu-content">
+                <div class="edu-title">HSC 12<sup>th</sup> Standard</div>
+                <div class="edu-sub">Kendriya Vidyalaya, D.G.Q.A</div>
+                <div class="edu-date">Apr 2021 - Jun 2022</div>
+                <div class="edu-detail">Percentage: 97.6%</div>
+              </div>
+            </div>
+            <!-- 10th -->
+            <div class="edu-step">
+              <div class="edu-icon school"><span>🏫</span></div>
+              <div class="edu-content">
+                <div class="edu-title">SSLC 10<sup>th</sup> Standard</div>
+                <div class="edu-sub">Kendriya Vidyalaya, D.G.Q.A</div>
+                <div class="edu-date">Apr 2019 - Jun 2020</div>
+                <div class="edu-detail">Percentage: 97.8%</div>
+              </div>
+            </div>
+          </div>
+          <!-- Roadmap line and animations handled by CSS below -->
+        </div>
+      </section>
+
+      <section class="experiences-section" id="experiences">
+        <h1 class="exp-heading">Experiences:</h1>
+        <div class="experience-cards-container">
+          <!-- Card 1 -->
+          <div class="experience-card">
+            <div class="exp-title">
+              <span class="exp-role">Intern</span>
+              <span class="exp-org">@ Microbolt Systems</span>
+            </div>
+            <div class="exp-duration">Jun 2025 - July 2025</div>
+            <div class="exp-desc">
+              <ul>
+                <li>
+                  Built an end-to-end home automation website featuring user
+                  login, authentication, and a robust database management
+                  system.
+                </li>
+                <li>
+                  Enabled users to dynamically customize control settings for
+                  hardware, including time constraints, RS232 input, and IR
+                  training features.
+                </li>
+                <li>
+                  <b>What I learned:</b> Enhanced my full-stack development
+                  skills (Node.js, Express, Databases), mastered RESTful API
+                  integration, and deepened my understanding of secure
+                  authentication and hardware-software interfacing for IoT
+                  solutions.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="experience-card">
+            <div class="exp-title">
+              <span class="exp-role">IoT Web Team Head</span>
+              <span class="exp-org">(College Club)</span>
+            </div>
+            <div class="exp-duration">Oct 2024 - Present</div>
+            <div class="exp-desc">
+              <ul>
+                <li>
+                  Built a user-registration portal for our college's annual
+                  technical event, Chakravyuha, handling real-time registrations
+                  and team management.
+                </li>
+                <li>
+                  Led a team of junior developers, fostering collaboration, best
+                  coding practices, and timely delivery of project milestones.
+                </li>
+                <li>
+                  <b>What I learned:</b> Gained hands-on experience in project
+                  leadership, web development, team communication, and deploying
+                  scalable web applications under tight deadlines.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="experience-card">
+            <div class="exp-title">
+              <span class="exp-role">Web Development Intern</span>
+              <span class="exp-org">@ Interpe</span>
+            </div>
+            <div class="exp-duration">May 2024 - Jul 2024</div>
+            <div class="exp-desc">
+              <ul>
+                <li>
+                  Built engaging, user-friendly games such as Rock Paper
+                  Scissors, Tic-Tac-Toe (XO), and Simon Says, focusing on
+                  interactive UI/UX and responsive design.
+                </li>
+                <li>
+                  Cloned the Spotify website, learning advanced CSS, React
+                  componentization, and state management for dynamic web
+                  applications.
+                </li>
+                <li>
+                  <b>What I learned:</b> Sharpened my JavaScript skills,
+                  developed a keen sense for creating interactive user
+                  experiences, and improved my code debugging and version
+                  control (Git) proficiency.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <h1 class="projects-heading">Projects</h1>
+        <!-- Software Projects -->
+        <h2 class="sub-heading">Software Projects</h2>
+        <div class="project-cards-container">
+          <!-- Card 1 -->
+          <div class="project-card">
+            <div class="project-title">TouristHub</div>
+            <div class="project-desc">
+              A full stack travel guide platform inspired by Airbnb, built using
+              Node.js, Express, and MongoDB. Users can browse, book, and review
+              tourist destinations with secure authentication and an interactive
+              UI.
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="project-card">
+            <div class="project-title">Elexbeewe</div>
+            <div class="project-desc">
+              An end-to-end smart automation control interface for users to
+              customize and operate devices conveniently. Built with JavaScript
+              and SQL, this system offers scheduling, device grouping, and
+              real-time monitoring.
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="project-card">
+            <div class="project-title">myWeather App</div>
+            <div class="project-desc">
+              Real-time weather monitoring website implemented using React.
+              Provides live weather updates, forecasts, and location-based
+              weather info with a clean, responsive design.
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="project-card">
+            <div class="project-title">PragatiStree</div>
+            <div class="project-desc">
+              Basic version of our idea for GDG Hackathon 2025. Aims to support
+              the overall development of women at all life stages—from childhood
+              and motherhood to old age—through resources, guidance, and
+              community.
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="project-card">
+            <div class="project-title">Spotify Clone</div>
+            <div class="project-desc">
+              A frontend clone of the Spotify website built using HTML and CSS.
+              Replicates the main UI and layout, focusing on responsive design
+              and clean aesthetics.
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="project-card">
+            <div class="project-title">CharIoT Registration Portal</div>
+            <div class="project-desc">
+              Developed a robust registration portal for Chakravyuha, the annual
+              tech event, enabling seamless user sign-up, team management, and
+              event registrations with real-time updates.
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="project-card">
+            <div class="project-title">Fun Games Suite</div>
+            <div class="project-desc">
+              Built classic games like Rock Paper Scissors, XO (Tic-Tac-Toe),
+              and Simon Says using JavaScript. Focused on interactive user
+              experience, responsive design, and clean code structure.
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="project-card">
+            <div class="project-title">Currency Converter</div>
+            <div class="project-desc">
+              A responsive web app for real-time currency conversion between
+              multiple currencies. Features API integration, user-friendly
+              interface, and instant exchange rate updates.
+            </div>
+          </div>
+          <!-- Card 9 -->
+          <div class="project-card">
+            <div class="project-title">Personal Portfolio Website</div>
+            <div class="project-desc">
+              My own portfolio website (this one!), designed and developed from
+              scratch using HTML, CSS, and JavaScript. Showcases my skills,
+              projects, and contact information in a modern, responsive layout.
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Projects -->
+        <h2 class="sub-heading">Hardware Projects</h2>
+        <div class="project-cards-container">
+          <!-- Card 1 -->
+          <div class="project-card">
+            <div class="project-title">Cell Phone RF Radiation Detector</div>
+            <div class="project-desc">
+              Designed and built a device capable of detecting radio frequency
+              emissions from mobile phones. Useful for educational
+              demonstrations and basic RF safety awareness.
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="project-card">
+            <div class="project-title">Digital Clock on CPLD MAX 3000</div>
+            <div class="project-desc">
+              Implemented a fully functional digital clock using VHDL on the
+              CPLD MAX 3000 board. Gained real-time hardware programming
+              experience and learned timing logic design.
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="project-card">
+            <div class="project-title">Road Condition Monitoring System</div>
+            <div class="project-desc">
+              Developed a signal-processing based system using MATLAB to monitor
+              and assess road conditions. Aimed at improving road safety and
+              maintenance through data analysis.
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="project-card">
+            <div class="project-title">Automatic Access Control System</div>
+            <div class="project-desc">
+              Built an access control system using RFID sensors to automate
+              entry and security. Enhanced my understanding of embedded systems
+              and contactless tech.
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="project-card">
+            <div class="project-title">RISC-V CPU Implementation</div>
+            <div class="project-desc">
+              Coded the basic architecture of a RISC-V CPU as part of the
+              eYantra IIT Bombay competition. Learned the fundamentals of CPU
+              design and instruction set implementation.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="achievements-section" id="achievements">
+        <div class="achievements-header">
+          <h1 class="achievements-title">
+            Achievements
+            <span class="firework" aria-hidden="true">
+              <span class="spark"></span>
+              <span class="spark"></span>
+              <span class="spark"></span>
+              <span class="spark"></span>
+              <span class="spark"></span>
+            </span>
+          </h1>
+        </div>
+        <div class="trophy-shelf">
+          <!-- Trophy 1 -->
+          <div class="trophy-card">
+            <div class="trophy-icon gold">🏆</div>
+            <div class="trophy-title">Best Web Contributor</div>
+            <div class="trophy-detail">
+              Recognized for outstanding contributions as IoT Web Team Head,
+              leading impactful projects and fostering innovation in the team.
+            </div>
+          </div>
+          <!-- Trophy 2 -->
+          <div class="trophy-card">
+            <div class="trophy-icon silver">🏆</div>
+            <div class="trophy-title">Paper Presentation</div>
+            <div class="trophy-detail">
+              Presented a survey analysis on "Reinforcement Learning-Enabled
+              Analog Interface Architecture using Accuracy-Optimized Neural
+              Networks" at a technical symposium.
+            </div>
+          </div>
+          <!-- Trophy 3 -->
+          <div class="trophy-card">
+            <div class="trophy-icon bronze">🏆</div>
+            <div class="trophy-title">Google Developer Group Hackathon</div>
+            <div class="trophy-detail">
+              Participated in GDG Hackathon, collaborating on innovative tech
+              solutions while sharpening problem-solving and teamwork skills.
+            </div>
+          </div>
+          <!-- Trophy 4 -->
+          <div class="trophy-card">
+            <div class="trophy-icon">🏆</div>
+            <div class="trophy-title">NSS Volunteer</div>
+            <div class="trophy-detail">
+              Actively involved in NSS, contributing to community service,
+              social awareness campaigns, and leadership activities.
+            </div>
+          </div>
+          <!-- Trophy 5 -->
+          <div class="trophy-card">
+            <div class="trophy-icon">🏆</div>
+            <div class="trophy-title">1st Prize - Street Coding</div>
+            <div class="trophy-detail">
+              Secured first place in the "Street Coding" competition organized
+              by CSMIT. Demonstrated quick problem-solving and coding skills.
+            </div>
+          </div>
+          <!-- Trophy 6 -->
+          <div class="trophy-card">
+            <div class="trophy-icon gold">🏆</div>
+            <div class="trophy-title">KVS Chennai Region Topper</div>
+            <div class="trophy-detail">
+              Ranked among the top 1.5% in both HSC and SSLC board exams,
+              recognized for academic excellence across the region.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-box">
+          <h2 class="contact-heading">Drop me a message!</h2>
+          <form class="contact-form" autocomplete="off">
+            <input
+              type="text"
+              name="name"
+              class="contact-input"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="contact-input"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              class="contact-textarea"
+              placeholder="Type your message here..."
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit" class="contact-submit">Send</button>
+          </form>
+          <div class="contact-success" style="display: none">
+            Thank you! Your message has been sent 🌟
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <span>Made with <span class="footer-heart">♥</span> Arya</span>
+      </footer>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
