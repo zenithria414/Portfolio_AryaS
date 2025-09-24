@@ -20,6 +20,6 @@ This project showcases my skills, experience, education, and projects in a moder
 
 ## 🌐 Live Demo
 
-Check it out at: [https://portfolio.bargavanr.tech/](https://portfolio.bargavanr.tech/)
+Check it out at: https://zenithria414.github.io/Portfolio_AryaS/
 
 **Made with ❤️ and HTML/CSS/JS**
